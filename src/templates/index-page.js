@@ -87,16 +87,8 @@ export const IndexPageTemplate = ({
                   </div>
                 </div>
                 <Features gridItems={intro.blurbs} />
-                <div className="columns">
-                 
-                </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
-                  {/* <BlogRoll /> */}
+                
                
-                </div>
               </div>
             </div>
           </div>
@@ -174,6 +166,7 @@ export const pageQuery = graphql`
                 }
               }
             }
+            text
           }
           
         }
