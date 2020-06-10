@@ -22,11 +22,11 @@ export const IndexPageTemplate = ({
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: '50% 100%',
       }}
     >
-      <div
+      {/* <div
         style={{
           display: 'flex',
           height: '150px',
@@ -62,7 +62,7 @@ export const IndexPageTemplate = ({
         >
           {subheading}
         </h3>
-      </div>
+      </div> */}
     </div>
     <section className="section section--gradient">
       <div className="container">
