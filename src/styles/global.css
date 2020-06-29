@@ -1,0 +1,37 @@
+.kidsData {
+display: inline-grid;
+}   
+.kidsName {
+display: inline-grid;
+width: 50vw;
+margin-right: 1vw;
+}
+.mothersName {
+display: inline-grid;
+width: 50vw;
+}
+.mothersData {
+    display: inline-grid;
+    margin-left: 2vw;
+}
+.checkbox {
+    zoom: 2.5;
+}
+.isSameAddress {
+text-align: center !important;
+}
+.isNotSameAddress {
+    text-align: center !important;
+}
+.address {
+    margin-bottom: 15vh !important;
+}
+.fathersName {
+    margin-top: 15vh !important;
+}
+.contact2Name {
+    margin-top: 10vh;
+}
+.contact2Phone {
+margin-bottom: 10vh !important;
+}
