@@ -1,29 +1,52 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
 
 function encode(data) {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&')
-}
+  const formData = new FormData()
+  
+  for (const key of Object.keys(data)) {
+    if (key === 'files') {
+      for (const file of data[key]) {
+        formData.append(key, file, file.name)
+      }
+    } else 
+    formData.append(key, data[key])
+  }
+  
+  return formData
+} 
 
-export default class Index extends React.Component {
+
+export default class Contact extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { isValidated: false }
+    this.state = {}
   }
-
+  
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value })
+    
   }
-
+  
+  handleAttachment = (e) => {
+    this.setState({ [e.target.name]: e.target.files[0] })
+    setTimeout(() => {
+      
+      const fileUploads = <p>{this.state.attachment.name}</p>
+      ReactDOM.render(fileUploads, document.getElementById('filesUploaded'));
+      
+    }, 500);
+  }
+  
+  
+  
   handleSubmit = (e) => {
     e.preventDefault()
     const form = e.target
     fetch('/', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
         'form-name': form.getAttribute('name'),
         ...this.state,
@@ -39,17 +62,17 @@ export default class Index extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1>Contact</h1>
+              <h1>Application Submission</h1>
               <form
-                name="contact"
+                name="application-submission"
                 method="post"
-                action="/contact/thanks/"
+                action="/submission/thanks/"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={this.handleSubmit}
               >
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-                <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="form-name" value="application-submission" />
                 <div hidden>
                   <label>
                     Don’t fill this out:{' '}
@@ -72,33 +95,20 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor={'email'}>
-                    Email
-                  </label>
-                  <div className="control">
-                    <input
-                      className="input"
-                      type={'email'}
-                      name={'email'}
-                      onChange={this.handleChange}
-                      id={'email'}
-                      required={true}
-                    />
+                  <div className="file">
+                    <label className="file-label">
+                      <input
+                        className="file-input"
+                        type="file"
+                        name="attachment"
+                        onChange={this.handleAttachment}
+                      />
+                      <span className="file-cta">
+                        <span className="file-label">Choose a file…</span>
+                      </span>
+                    </label>
                   </div>
-                </div>
-                <div className="field">
-                  <label className="label" htmlFor={'message'}>
-                    Message
-                  </label>
-                  <div className="control">
-                    <textarea
-                      className="textarea"
-                      name={'message'}
-                      onChange={this.handleChange}
-                      id={'message'}
-                      required={true}
-                    />
-                  </div>
+                      <div id="filesUploaded"></div> 
                 </div>
                 <div className="field">
                   <button className="button is-link" type="submit">
