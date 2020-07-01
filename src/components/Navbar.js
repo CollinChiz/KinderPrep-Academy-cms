@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 // import logo from '../img/logo.svg'
+import "../../src/global.css";
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -44,7 +45,7 @@ const Navbar = class extends React.Component {
               <img src={logo} alt="KinderPrep-Academy" style={{ width: '88px' }} />
             </Link> */}
             {/* Hamburger menu */}
-            <h1 src="/" style={{fontSize: "30px", color: "red"}}>KinderPrep-Academy</h1>
+            <a href="/"><h1 style={{fontSize: "30px", color: "red"}}>KinderPrep Academy</h1> </a>
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
@@ -61,7 +62,7 @@ const Navbar = class extends React.Component {
           >
             <div className="navbar-start has-text-centered">
              
-              <Link className="navbar-item" to="/contact/application-download">
+              <Link className="navbar-item" to="/downloadPage">
                 Download Application
               </Link>
               <Link className="navbar-item" to="/contact">

@@ -1,0 +1,16 @@
+.downloadButton {
+height: 50px;
+font-size: 20px;
+background-color: red;
+margin-top: 50px;
+border-radius: 5px;
+border-width: 5px;
+border-style: groove;
+
+}
+.downloadButton:hover {
+    border-style: dotted;
+}
+.navbar-item:hover {
+    color: red !important;
+}
