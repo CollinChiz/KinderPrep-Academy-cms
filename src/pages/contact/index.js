@@ -102,6 +102,7 @@ export default class Contact extends React.Component {
                         type="file"
                         name="attachment"
                         onChange={this.handleAttachment}
+                        required={true}
                       />
                       <span className="file-cta">
                         <span className="file-label">Choose a file…</span>

@@ -55,6 +55,18 @@ const Footer = class extends React.Component {
                         Admin
                       </a>
                     </li>
+                    <br></br>
+                    <li>
+                      Contact:
+                      <a
+                        href="mailto:ashleyhandy@kpaofmartinsville.com"
+                        className="navbar-item"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                      ashleyhandy@kpaofmartinsville.com
+                      </a>
+                    </li>
                     
                     
                   </ul>

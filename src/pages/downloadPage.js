@@ -9,7 +9,7 @@ const downloadPage = () => (
           <div className="content">
             <h1>Application Download</h1>
             <div>
-              Below is a link to download the Application for Admittance in a word document. 
+              Below is a button to download the Application for Admittance in a word document. 
               Please fill out this document digitally and include any attachments in this word document. <br></br>
               After document is filled out visit the Application Submission page and submit this document with your name. <br></br>
 
