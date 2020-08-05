@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'KinderPrep Academy',
+    title: 'KinderPrep Academy of Martinsville',
     description:
-      'KinderPrep Academy',
+      'KinderPrep Academy of Martinsville',
     Author: "Collin Chisholm cwchiz16@gmail.com"
   },
   plugins: [
