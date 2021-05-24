@@ -25,17 +25,26 @@ const Footer = class extends React.Component {
                         Home
                       </Link>
                     </li>
-                    <li>
-                      <Link className="navbar-item" to="/about">
-                        About
-                      </Link>
-                    </li>
+            
                    
                     <li>
-                      <Link className="navbar-item" to="/contact/examples">
-                        Form Examples
+                      <Link className="navbar-item" to="/downloadPage">
+                        Download Application
                       </Link>
                     </li>
+
+                    <li>
+                      <Link className="navbar-item" to="/contact">
+                        Submit Application
+                      </Link>
+                    </li>
+
+                  </ul>
+                </section>
+              </div>
+              <div className="column is-4">
+                <section>
+                  <ul className="menu-list">
                     <li>
                       <a
                         className="navbar-item"
@@ -46,18 +55,20 @@ const Footer = class extends React.Component {
                         Admin
                       </a>
                     </li>
-                  </ul>
-                </section>
-              </div>
-              <div className="column is-4">
-                <section>
-                  <ul className="menu-list">
-                    
+                    <br></br>
                     <li>
-                      <Link className="navbar-item" to="/contact">
-                        Contact
-                      </Link>
+                      Contact:
+                      <a
+                        href="mailto:ashleyhandy@kpaofmartinsville.com"
+                        className="navbar-item"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                      ashleyhandy@kpaofmartinsville.com
+                      </a>
                     </li>
+                    
+                    
                   </ul>
                 </section>
               </div>
@@ -69,14 +80,14 @@ const Footer = class extends React.Component {
                     style={{ width: '1em', height: '1em' }}
                   />
                 </a>
-                <a title="twitter" href="https://twitter.com">
+                {/* <a title="twitter" href="https://twitter.com">
                   <img
                     className="fas fa-lg"
                     src={twitter}
                     alt="Twitter"
                     style={{ width: '1em', height: '1em' }}
                   />
-                </a>
+                </a> */}
                 <a title="instagram" href="https://instagram.com">
                   <img
                     src={instagram}
@@ -84,13 +95,13 @@ const Footer = class extends React.Component {
                     style={{ width: '1em', height: '1em' }}
                   />
                 </a>
-                <a title="vimeo" href="https://vimeo.com">
+                {/* <a title="vimeo" href="https://vimeo.com">
                   <img
                     src={vimeo}
                     alt="Vimeo"
                     style={{ width: '1em', height: '1em' }}
                   />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

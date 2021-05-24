@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 // import logo from '../img/logo.svg'
+import "../../src/global.css";
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -44,7 +45,7 @@ const Navbar = class extends React.Component {
               <img src={logo} alt="KinderPrep-Academy" style={{ width: '88px' }} />
             </Link> */}
             {/* Hamburger menu */}
-            <h1 src="/" style={{fontSize: "30px", color: "red"}}>KinderPrep-Academy</h1>
+            <a href="/"><h1 style={{fontSize: "30px", color: "red"}}>KinderPrep Academy</h1> </a>
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
@@ -60,17 +61,23 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
-              </Link>
-              
              
-              <Link className="navbar-item" to="/contact">
-                Contact
+              <Link className="navbar-item" to="/meetTheOwner">
+                Meet the Owner
               </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
+              <Link className="navbar-item" to="/">
+                Home
               </Link>
+              <Link className="navbar-item" to="/ourMission">
+                Our Mission
+              </Link>
+             
+              <a className="navbar-item" href="https://form.jotform.com/jsform/211385763930055" target="_blank">
+                Application for Admission
+              </a>
+              <a className="navbar-item" href="https://form.jotform.com/ashleyhandy7/kinderprep-academy-summer-app" target="_blank">
+                Scholarship Application
+              </a>
             </div>
             <div className="navbar-end has-text-centered">
              
