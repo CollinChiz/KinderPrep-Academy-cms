@@ -68,9 +68,9 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/contact">
                 Submit Application
               </Link>
-              <button className="navbar-item" href="https://form.jotform.com/ashleyhandy7/kinderprep-academy-summer-app">
+              <a className="navbar-item" href="https://form.jotform.com/ashleyhandy7/kinderprep-academy-summer-app">
                 Scholarship Application
-              </button>
+              </a>
             </div>
             <div className="navbar-end has-text-centered">
              
