@@ -69,6 +69,8 @@ const Navbar = class extends React.Component {
                 Our Mission
               </Link>
              
+              <script type="text/javascript" src="https://form.jotform.com/jsform/211385763930055"></script>
+              
               <a className="navbar-item" href="https://form.jotform.com/jsform/211385763930055" target="_blank">
                 Application for Admission
               </a>
