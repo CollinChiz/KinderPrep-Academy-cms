@@ -57,6 +57,13 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "meet-the-owner"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/gallery/index.md"
+        label: "gallery"
+        name: "Gallery"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "gallery"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
       # - file: "src/pages/products/index.md"
       #   label: "Products Page"
       #   name: "products"

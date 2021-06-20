@@ -72,6 +72,9 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/meetTheOwner">
                 Meet the Owner
               </Link>
+              <Link className="navbar-item" to="/gallery">
+                Gallery
+              </Link>
              
               <a className="navbar-item" href="https://form.jotform.com/211385763930055" target="_blank">
                 Application for Admission
