@@ -25,7 +25,7 @@ export const GalleryTemplate = ({ title, content, contentComponent }) => {
   )
 }
 
-Gallery.propTypes = {
+GalleryTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
