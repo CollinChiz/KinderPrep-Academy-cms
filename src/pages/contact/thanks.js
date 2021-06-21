@@ -7,7 +7,7 @@ export default () => (
       <div className="container">
         <div className="content">
           <h1>Thank you!</h1>
-          <p>Your application has been submitted for review!</p>
+          <p>Your message is being reviewed and we will be in contact with you as soon as possible</p>
         </div>
       </div>
     </section>
