@@ -78,9 +78,6 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/scholarOpp">
                 Scholarship Opportunities 
               </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
              
               <a className="navbar-item" href="https://form.jotform.com/211385763930055" target="_blank">
                 Application for Admission
@@ -88,6 +85,9 @@ const Navbar = class extends React.Component {
               <a className="navbar-item" href="https://form.jotform.com/ashleyhandy7/kinderprep-academy-summer-app" target="_blank">
                 Scholarship Application
               </a>
+              <Link className="navbar-item" to="/contact">
+                Contact
+              </Link>
             </div>
             <div className="navbar-end has-text-centered">
              
