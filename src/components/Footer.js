@@ -10,7 +10,7 @@ import vimeo from '../img/social/vimeo.svg'
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-background-black has-text-white-ter">
+      <footer className="footer has-background-black has-text-white-ter" style={{position: "fixed"}}>
         <div className="content has-text-centered">
          <h1 style={{fontSize: "30px", color: "red"}}>KinderPrep Academy</h1>
         </div>
@@ -26,19 +26,7 @@ const Footer = class extends React.Component {
                       </Link>
                     </li>
             
-                   
-                    <li>
-                      <Link className="navbar-item" to="/downloadPage">
-                        Download Application
-                      </Link>
-                    </li>
-
-                    <li>
-                      <Link className="navbar-item" to="/contact">
-                        Submit Application
-                      </Link>
-                    </li>
-
+                      
                   </ul>
                 </section>
               </div>
@@ -73,7 +61,7 @@ const Footer = class extends React.Component {
                 </section>
               </div>
               <div className="column is-4 social">
-                <a title="facebook" href="https://facebook.com">
+                <a title="facebook" href="https://www.facebook.com/KPAofMartinsville">
                   <img
                     src={facebook}
                     alt="Facebook"
@@ -88,13 +76,13 @@ const Footer = class extends React.Component {
                     style={{ width: '1em', height: '1em' }}
                   />
                 </a> */}
-                <a title="instagram" href="https://instagram.com">
+                {/* <a title="instagram" href="https://instagram.com">
                   <img
                     src={instagram}
                     alt="Instagram"
                     style={{ width: '1em', height: '1em' }}
                   />
-                </a>
+                </a> */}
                 {/* <a title="vimeo" href="https://vimeo.com">
                   <img
                     src={vimeo}
